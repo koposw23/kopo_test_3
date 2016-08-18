@@ -1,0 +1,147 @@
+﻿<! DOCTYPE html >
+<html>
+<head>
+<title>펜션 홈피</title>
+<style type='text/css'>
+table, td{ font-size:13px; text-align:center; }
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:activate {text-decoration:none;}
+
+
+img.logo{z-index:0; position:absolute;top:0px; left:0px;}
+</style>
+
+<script language='javascript' type='text/javascript'>
+//<![CDATA[
+var muCnt = 5;
+
+function fncShow(pos){
+var i=0;
+   for(i; i<muCnt;i++)
+   {
+      var obj = document.getElementById("menu"+i);
+      var obj2 = document.getElementById("m"+i);
+   
+      if(i==pos){
+         obj.style.display = '';
+         obj2.style.color = "#ff0000";
+      }else{
+         obj.style.display = 'none';
+         obj2.style.color = "#000000";
+      }
+   } 
+}
+
+function fncHide(pos){
+   var obj = document.getElementById("menu"+pos);
+   obj.style.display = 'none';
+}
+
+//]]>
+</script>
+</head>
+<body bgcolor ="#fff00">
+<center>
+<br><br><table cellpadding='0' cellspacing='0' border='0' width='0' style="margin-bottom: 0px; margin-top: 0px;" align="center">
+<td width='150'> <a href='main.htm' target=main><img class ="logo" src="logo.JPG" width="500" height="140" ></a>
+</td>
+<td>
+<table cellpadding='3' cellspacing='0' border='0' width='800' height=''>
+   <tr height = '30'>
+      <td width='100' onmouseover='fncShow(0);' id='m0'><b><h1 style="margin-bottom: 0px; margin-top: 0px;"> 팬션소개 </h1></b></td>
+      <td width='100' onmouseover='fncShow(1);' id='m1'><b><h1 style="margin-bottom: 0px; margin-top: 0px;"> 찾아오기 </h1></b></td>
+      <td width='120' onmouseover='fncShow(2);' id='m2'><b><h1 style="margin-bottom: 0px; margin-top: 0px;"> 주변여행지 </h1></b></td>
+      <td width='100' onmouseover='fncShow(3);' id='m3'><b><h1 style="margin-bottom: 0px; margin-top: 0px;"> 예약하기 </h1></b></td>
+      <td width='100' onmouseover='fncShow(4);' id='m4'><b><h1 style="margin-bottom: 0px; margin-top: 0px;"> 팬션소식 </h1></b></td>
+      <td width='100'></td>
+   </tr>
+   <tr>
+      <td colspan='6'>
+      
+         <table id='menu0' style='display:none;' cellpadding='0' cellspacing='0'  border='0' width='800'>
+            <tr>
+               <td width='0'></td>
+               <td width='0' style='text-align:left;'>
+                  <a href='main.htm' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 카카오 팬션 </span>
+                  </a>
+                  <a href='a_01.htm' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 네오방 </span>
+                  </a>
+                  <a href='a_02.htm' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 프로도방 </span>
+                  </a>
+                  <a href='a_03.htm' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 제이지방 |</span>
+                  </a>
+               </td>
+            </tr>
+         </table>
+         <table id='menu1' style='display:none;' cellpadding='0' cellspacing='0' width='800'>
+            <tr>
+               <td width='100'></td>
+               <td width='0' style='text-align:left;'>
+                  <a href='b_01.htm' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 찾아오는길 </span>
+                  </a>
+                  <a href='b_02.htm' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 자가용이용 </span>
+                  </a>
+                  <a href='b_03.htm' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 대중교통이용 |</span>
+                  </a>
+               </td>
+            </tr>
+         </table>
+         <table id='menu2' style='display:none;' cellpadding='0' cellspacing='0' border='0' width='800'>
+            <tr>
+               <td width='250'></td>
+               <td width='0' style='text-align:left;'>
+                  <a href='c_01.htm' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 벽계구곡 </span>
+                  </a>
+                  <a href='c_02.htm' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 쁘띠프랑스 </span>
+                  </a>
+                  <a href='c_03.htm' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 오션월드 |</span>
+                  </a>
+               </td>
+            </tr>
+         </table>
+         <table id='menu3' style='display:none;' cellpadding='0' cellspacing='0' border='0' width='800'>
+            <tr>
+               <td width='430'></td>
+               <td width='0' style='text-align:left;'>
+                  <a href='d_01.jsp' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 예약상황 </span>
+                  </a>
+                  <a href='d_02.jsp' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 예약하기 |</span>
+                  </a>                  
+               </td>
+            </tr>
+         </table>
+         <table id='menu4' style='display:none;' cellpadding='0' cellspacing='0' border='0' width='800'>
+            <tr>
+               <td width='550'></td>
+               <td width='0' style='text-align:left;'>
+                  <a href='j/gongji_list.jsp' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 팬션소식 </span>
+                  </a>
+                  <a href='jj/board_list.jsp' target=main>
+                  <span onmouseover=this.style.color='#ff0000' onmouseout=this.style.color='#000000'>| 이용후기 | </span>
+                  </a>                  
+               </td>
+            </tr>
+         </table>
+      </td>
+   </tr>
+</table>
+</td>
+</table>   
+</center>
+</body>
+</html>
